@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb9c12a8c6c949f7af83a3d238359d0, type: 3}
+  m_Name: vFolders Data
+  m_EditorClassIdentifier: 
+  folderDatas_byGuid:
+    keys:
+    - 7a93cc8e47b92b24588e0a5d11e97bb5
+    - 684e18df05ba2ff4b934c5afe2d5befb
+    - 408b24bacaf29fb4bb977fde0cb89660
+    - 521347b8f8e0676439825fbb0b7eeadb
+    - d5d1be2620e6e464ba7f9acbd67d89ad
+    - 2f7452b0be76f894dba624a74ff85a72
+    - 3bc5ff38cb8a39149b2f505d7843708e
+    - eae3ef486f4c5c54ab97bb1bccf1c546
+    - 3def658765a787541aa6926a6fc34a80
+    - 9c53962885c2c4f449125a979d6ad240
+    values:
+    - iconNameOrGuid: cs Script Icon
+      colorIndex: 3
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: Prefab Icon
+      colorIndex: 7
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: Material Icon
+      colorIndex: 6
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: AudioSource Icon
+      colorIndex: 2
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: Shader Icon
+      colorIndex: 9
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: ScriptableObject Icon
+      colorIndex: 1
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: RawImage Icon
+      colorIndex: 4
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: 
+      colorIndex: 8
+      isIconRecursive: 0
+      isColorRecursive: 1
+    - iconNameOrGuid: 
+      colorIndex: 1
+      isIconRecursive: 0
+      isColorRecursive: 0
+    - iconNameOrGuid: 
+      colorIndex: 9
+      isIconRecursive: 0
+      isColorRecursive: 1
+  bookmarks:
+  - guid: 3bc5ff38cb8a39149b2f505d7843708e
+  - guid: 684e18df05ba2ff4b934c5afe2d5befb
