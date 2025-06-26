@@ -1,0 +1,18 @@
+{
+  "dialogues": [
+    {
+      "id": "intro_01",
+      "text": "¿Dónde estoy? Este lugar me resulta familiar...",
+      "duration": 4.0,
+      "audioClip": "",
+      "speaker": "Protagonista"
+    },
+    {
+      "id": "memory_01", 
+      "text": "Recuerdo haber estado aquí antes, pero ¿cuándo?",
+      "duration": 3.5,
+      "audioClip": "",
+      "speaker": "Protagonista"
+    }
+  ]
+}

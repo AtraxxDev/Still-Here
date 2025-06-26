@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     public bool enableInteraction = true;
     public bool enableMouseControl = true;
 
+    [Header("Referencias Adicionales")]
+    public PlayerCameraFollow playerCameraFollow;
+
     void Start()
     {
         InitializeModules();
@@ -37,6 +40,9 @@ public class PlayerController : MonoBehaviour
         if (playerMouseController == null)
             playerMouseController = GetComponent<PlayerMouseController>();
 
+        if (playerCameraFollow == null)
+            playerCameraFollow = GetComponent<PlayerCameraFollow>();
+
         // Inicializar módulos
         if (playerMovement != null)
             playerMovement.Initialize();
@@ -46,6 +52,12 @@ public class PlayerController : MonoBehaviour
 
         if (playerMouseController != null)
             playerMouseController.Initialize(transform, Camera.main.transform);
+
+        if (playerCameraFollow != null)
+        {
+            playerCameraFollow.cameraTarget = transform;
+            playerCameraFollow.Initialize(Camera.main.transform);
+        }
     }
 
     void HandleInput()
@@ -55,7 +67,9 @@ public class PlayerController : MonoBehaviour
         {
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
-            playerMouseController.HandleMouseInput(mouseX, mouseY);
+            bool zoomInput = Input.GetKey(KeyCode.Mouse1);
+
+            playerMouseController.HandleMouseInput(mouseX, mouseY, zoomInput);
         }
 
         // Movimiento
@@ -64,8 +78,10 @@ public class PlayerController : MonoBehaviour
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
             bool isRunning = Input.GetKey(KeyCode.LeftShift);
+            bool isCrouching = Input.GetKey(KeyCode.LeftControl);
 
-            playerMovement.HandleMovement(horizontal, vertical, isRunning);
+            playerMovement.HandleMovement(horizontal, vertical, isRunning, isCrouching);
+            playerMovement.SyncColliderPosition();
         }
 
         // Interacción
