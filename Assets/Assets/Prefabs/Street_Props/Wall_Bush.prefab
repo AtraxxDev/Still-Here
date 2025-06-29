@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5359338298844447277}
   - component: {fileID: 2618565092698390415}
   m_Layer: 0
-  m_Name: Hedges
+  m_Name: Wall_Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
